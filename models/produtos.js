@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     precoNovo: DataTypes.INTEGER,
     desconto: DataTypes.FLOAT,
     imagem: {
-      type: DataTypes.TEXT(15000), // Ajuste o tamanho conforme necessário
+      type: DataTypes.TEXT(15000), 
       allowNull: false    }
   }, {
     sequelize,
