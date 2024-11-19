@@ -5,6 +5,7 @@ const getAllProduct = async (_req, res) => {
     try{
         const products = await Produtos.findAll();
         res.json(products);
+        
     } catch(error) {
         console.log(error);
         res.status(500).json({error: "erro no sistema"})

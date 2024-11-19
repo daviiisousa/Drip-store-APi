@@ -6,9 +6,12 @@ var logger = require('morgan');
 var cors = require('cors'); // Importa o pacote cors
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/produto');
+
 
 var app = express();
+const user = require("./routes/user.js");
+const rotaUser = require('./routes/user.js');
 
 // Habilita o CORS para todas as requisições
 app.use(cors());
@@ -24,7 +27,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/produto', usersRouter);
+app.use('/user',rotaUser)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
