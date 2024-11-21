@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
    endereco.belongsTo(models.cliente,{
-    foreignKey:"ClienteId",
+    foreignKey:"ClienteIdd",
     as: "Cliente"
    })
     }
@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     complemento: DataTypes.STRING,
     cep: DataTypes.STRING,
     rua: DataTypes.STRING,
+    ClienteIdd : DataTypes.INTEGER
 
     
   }, {

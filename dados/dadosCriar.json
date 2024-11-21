@@ -1,0 +1,17 @@
+{
+	"clientes":{
+		"email":"hequecoste@gmail",
+		"senha":"minha supersenha",
+		"celular":"130230240213",
+		"cpf":"229929292",
+		"nome":"davi"
+	},
+	"enderecos":{
+		"rua":"lagoa dos patos",
+		"cep":"1234567",
+		"bairro":"montese",
+		"cidade":"fortaleza",
+		"complemento":"bloco a"
+	}
+	
+}
